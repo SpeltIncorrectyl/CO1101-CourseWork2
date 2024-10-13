@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "entanglement";
+    src: url("entanglement-font/Entanglement-rgpRB.ttf");
+}
+
+@font-face {
+    font-family: "queensides";
+    src: url("queensides-font/Queensides-3z7Ey.ttf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "handwriting1";
+    src: url("Shadows_Into_Light/ShadowsIntoLight-Regular.ttf");
+}
+
+@font-face {
+    font-family: "handwriting2";
+    src: url("Indie_Flower/IndieFlower-Regular.ttf");
+}
+
+@font-face {
+    font-family: "handwriting3";
+    src: url("Handlee/Handlee-Regular.ttf");
+}
+
+body {
+    background-color: #000000;
+    margin: 0px;
+    overflow: hidden;
+    cursor: default;
+}
+
+#star-scape {
+    position: absolute;
+    z-index: -1;
+}

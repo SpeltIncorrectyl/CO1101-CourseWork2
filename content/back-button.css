@@ -1,0 +1,18 @@
+/* CSS for a flat button 
+It's not a real button, just a span.
+onclick works jsut fine on any element so I'm not sure what the point of buttons are */
+
+.text-box .back-button {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-style: "bold";
+    font-size: 25pt;
+    padding: 5px;
+    background-color: #131314;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    bottom: 25px;
+}

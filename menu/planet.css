@@ -1,0 +1,64 @@
+/* just a run of the mill glowing sphere */
+/* it moves when you hover over it */
+.planet {
+    width: var(--diameter);
+    height: var(--diameter);
+    min-height: var(--diameter);
+    min-width: var(--diameter);
+    --diameter: 100px;
+
+    background-color: var(--glow);
+    --glow: #808080;
+
+    box-shadow: 0px 0px 50px 5px var(--glow);
+
+    border-radius: 50%;
+
+    margin-left: 100px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    opacity: 1;
+
+    transition: 0.3s;
+
+    margin-bottom: calc(var(--gap) - var(--diameter) / 2);
+}
+
+.planet span {
+    color: #fbfbfbfb;
+    text-align: center;
+    font-family: "roboto";
+    transition: 0.3s;
+    font-size: 20pt;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.planet.hidden {
+    opacity: 0;
+    min-height: 0px;
+    height: 0px;
+    margin-bottom: 0px;
+}
+
+.planet:hover {
+    width: calc(var(--diameter) + 10px);
+    height: calc(var(--diameter) + 10px);
+}
+
+.planet.selected {
+    opacity: 1;
+    width: calc(100vw - 200px);
+    min-height: calc(100vh - 400px);
+    border-radius: 0%;
+    box-shadow: 0px 0px 0px 0px;
+    background-color: #202124;
+}
+
+.planet.selected span {
+    opacity: 1;
+}

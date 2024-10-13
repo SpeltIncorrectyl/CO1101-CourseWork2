@@ -1,0 +1,27 @@
+/* Make the sun change size when it is hovered over */
+/* All this does is make the div and text larger when the div is hovered over */
+/* This requires the sun-centred class which is removed upon the sun moving to the top so it doesn't change size when you hover over it*/
+
+.sun.sun-centred div:hover {
+    width: min(70vw, 700px);
+    height: min(70vw, 700px);
+}
+
+.sun.sun-centred div:hover span {
+    font-size: 80pt;
+}
+
+@media screen and (max-width: 600px) {
+    .sun.sun-centred div:hover span {
+      font-size: 30pt;
+    }
+}
+
+.sun.sun-top div:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.sun.sun-top div:hover span {
+    font-size: 35pt;
+}

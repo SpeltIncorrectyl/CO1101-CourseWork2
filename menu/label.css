@@ -1,0 +1,32 @@
+.planet .label {
+    display: block;
+    opacity: 1;
+    position: absolute;
+}
+
+.selected .planet .label {
+    animation: fade-in 3s;
+}
+
+.planet.selected .label {
+    display: none;
+}
+
+/* These are different classes for the different handwriting styles */
+/* I can add and remove the classes via jquery on a timer to give it a doodle effect */
+.planet .handwriting1 {
+    font-family: "handwriting1";
+}
+
+.planet .handwriting2 {
+    font-family: "handwriting2";
+}
+
+.planet .handwriting3 {
+    font-family: "handwriting3";
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,37 @@
+/* Give all inputs a flat look */
+input {
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 10pt;
+    height: 20px;
+    width: 300px;
+    font-family: "roboto";
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #21aed1;
+}
+
+.submit-button {
+    font-style: "bold";
+    font-size: 15pt;
+    padding: 5px;
+    background-color: #131314;
+    transition: 0.3s;
+}
+
+.unsubmit-button {
+    font-style: "bold";
+    font-size: 15pt;
+    padding: 5px;
+    color: #414141;
+    background-color: #131314;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    margin-left: 20px;
+}

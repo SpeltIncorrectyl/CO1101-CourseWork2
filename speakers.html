@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- All the stylesheets -->
+        <link rel="stylesheet" href="main.css">
+
+        <link rel="stylesheet" href="sun/sun.css">
+        <!-- <link rel="stylesheet" href="sun/sun_hover.css"> -->
+        <link rel="stylesheet" href="sun/sun_top.css">
+
+        <link rel="stylesheet" href="menu/planet.css">
+        <link rel="stylesheet" href="menu/container.css">
+        <link rel="stylesheet" href="menu/back.css">
+        <link rel="stylesheet" href="menu/planet-text.css">
+        <link rel="stylesheet" href="menu/label.css">
+
+        <link rel="stylesheet" href="content/text-box.css">
+        <link rel="stylesheet" href="content/back-button.css">
+        <link rel="stylesheet" href="content/forward-button.css">
+        <link rel="stylesheet" href="content/name.css">
+        <link rel="stylesheet" href="content/portrait.css">
+        <link rel="stylesheet" href="content/form.css">
+    </head>
+
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- <script src="stars.js"></script> -->
+        <script src="main.js"></script>
+        <script src="speakers.js"></script>
+
+        <canvas id="star-scape"></canvas>
+
+        <div class="sun sun-top"><div><span>TechCon2023</span></div></div>
+        <div class="text-box">
+            <h2>Speakers</h2>
+            <ul>
+                <li class="speaker-select" target="cleve-ash-bio">Cleve Ash</li>
+                <li class="speaker-select" target="gennet-alderson-bio">Gennet Alderson</li>
+                <li class="speaker-no-select">Sam Bankman Freid (Unavailable)</li>
+                <li class="speaker-select" target="max-jones-bio">Max Jones</li>
+                <li class="speaker-select" target="steven-tompson-bio">Steven Tompson</li>
+            </ul>
+            <span class="back-button" onclick="window.location = 'reverse_speakers.html'">Back</span>
+        </div>
+        <div class="bio" id="cleve-ash-bio">
+            <img src="portraits/cleve_ash.jpeg" class="portrait flash" style="animation-delay:0.1s;"/>
+            <span class="flash" style="animation-delay:0.2s;"><b>Name:</b>Cleve Ash</span>
+            <span class="flash" style="animation-delay:0.3s;"><b>Company:</b>inference.ai</span>
+            <span class="flash" style="animation-delay:0.4s;"><b>Position:</b>CFO, Co-Founder</span>
+            <span class="flash" style="animation-delay:0.5s;"><b>Bio:</b>inference.ai is dedicated to commercializing safe and affordable AI. Cleve has been working for the startup since its initiation in 2019.</span>
+            <span class="flash" style="animation-delay:0.6s;"><b>Talk:</b>inference, our AI startup journey, Asimov and Beyond: the angers of AI</span>
+        </div>
+        <div class="bio undisplayed" id="gennet-alderson-bio">
+            <img src="portraits/gennet-alderson.jpeg" class="portrait flash" style="animation-delay:0.1s;"/>
+            <span class="flash" style="animation-delay:0.2s;"><b>Name:</b>Gennet Alderson</span>
+            <span class="flash" style="animation-delay:0.3s;"><b>Company:</b>Nasa</span>
+            <span class="flash" style="animation-delay:0.4s;"><b>Position:</b>Senior Engineer</span>
+            <span class="flash" style="animation-delay:0.5s;"><b>Bio:</b>Gennet has worked at Nasa for over 15 years. She was part of the Perseverance Mars Mission team and the Juice probe. She is here to talk about her experiences engineering craft to travel billions of miles in the void of space.</span>
+            <span class="flash" style="animation-delay:0.6s;"><b>Talk:</b>3 Easy Steps to Launch a Space Probe, Juice: The In and the Out</span>
+        </div>
+        <div class="bio undisplayed" id="max-jones-bio">
+            <img src="portraits/max_jones.jpeg" class="portrait flash" style="animation-delay:0.1s;"/>
+            <span class="flash" style="animation-delay:0.2s;"><b>Name:</b>Max Jones</span>
+            <span class="flash" style="animation-delay:0.3s;"><b>Company:</b>Abundant Energy</span>
+            <span class="flash" style="animation-delay:0.4s;"><b>Position:</b>Engineer</span>
+            <span class="flash" style="animation-delay:0.5s;"><b>Bio:</b>Max has spent his career working in the energy sector. Previously working for BP, he was hired by a renewable energy startup called Abundant Energyin 2018 and has been working there since.</span>
+            <span class="flash" style="animation-delay:0.6s;"><b>Talk:</b>The Solar Success Story; The Geopolitics of Manufacturing Solar</span>
+        </div>
+        <div class="bio undisplayed" id="steven-tompson-bio">
+            <img src="portraits/steven_tompson.jpeg" class="portrait flash" style="animation-delay:0.1s;"/>
+            <span class="flash" style="animation-delay:0.2s;"><b>Name:</b>Steven Tompson</span>
+            <span class="flash" style="animation-delay:0.3s;"><b>Company:</b>National Networking and Communications Trust</span>
+            <span class="flash" style="animation-delay:0.4s;"><b>Position:</b>Engineer</span>
+            <span class="flash" style="animation-delay:0.5s;"><b>Bio:</b>Steven's work in the telecommunications industry has allowed him to have the opportunity to work with telecomms satelites. He is here today to talk about his experiences coordinating the machines high above the sky to deliver internet.</span>
+            <span class="flash" style="animation-delay:0.6s;"><b>Talk:</b>Network Protocols: An Extensive Guide; Network Protocols 101</span>
+        </div>
+    </body>
+</html>

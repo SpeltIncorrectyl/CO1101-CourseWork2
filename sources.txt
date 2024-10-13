@@ -1,0 +1,10 @@
+The images for portraits are from https://this-person-does-not-exist.com.
+This project uses fonts from google fonts, the credits for each font can be found in it's folder. These folders include:
+    * Architects Daughter
+    * Handlee
+    * Roboto
+    * Indie Flower
+    * Queensides
+    * Shadows Into Light
+    * Entanglement
+JQuery is used as a library in this project.

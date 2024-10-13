@@ -1,0 +1,29 @@
+.text-box {
+    opacity: 1;
+    width: calc(100vw - 200px);
+    min-height: calc(100vh - 400px);
+    margin-top: 300px;
+    margin-left: 100px;
+    background-color: #202124;
+    position: absolute;
+}
+
+.text-box * {
+    color: #ffffff;
+    font-family: "roboto";
+    margin: 10px;
+    animation: fade-in 1s;
+}
+
+.text-box h2 {
+    font-size: 30pt;
+}
+
+.text-box p {
+    font-size: 20pt;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

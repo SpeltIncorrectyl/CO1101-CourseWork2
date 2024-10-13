@@ -1,0 +1,21 @@
+/* A list of names for the speakers page
+They have a nice background and move when you hover them */
+
+.text-box ul li {
+    font-size: 20pt;
+    padding: 5px;
+    background-color: #131314;
+    width: 400px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* Speakers that are unavailable are greyed out, and don't hover */
+.text-box ul li.speaker-no-select {
+    color :#414141;
+}
+
+/* Only selected speakers hover */
+.text-box ul li.speaker-select:hover {
+    margin-left: 20px;
+}

@@ -1,0 +1,15 @@
+/* Make the sun move to the top */
+/* sun-top class is added when the sun is clicked */
+
+.sun-top {
+    height: 300px;
+}
+
+.sun-top div {
+    width: 200px;
+    height: 200px;
+}
+
+.sun-top div span {
+    font-size: 20pt;
+}

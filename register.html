@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- All the stylesheets -->
+        <link rel="stylesheet" href="main.css">
+
+        <link rel="stylesheet" href="sun/sun.css">
+        <!-- <link rel="stylesheet" href="sun/sun_hover.css"> -->
+        <link rel="stylesheet" href="sun/sun_top.css">
+
+        <link rel="stylesheet" href="menu/planet.css">
+        <link rel="stylesheet" href="menu/container.css">
+        <link rel="stylesheet" href="menu/back.css">
+        <link rel="stylesheet" href="menu/planet-text.css">
+        <link rel="stylesheet" href="menu/label.css">
+
+        <link rel="stylesheet" href="content/text-box.css">
+        <link rel="stylesheet" href="content/back-button.css">
+        <link rel="stylesheet" href="content/forward-button.css">
+        <link rel="stylesheet" href="content/name.css">
+        <link rel="stylesheet" href="content/portrait.css">
+        <link rel="stylesheet" href="content/form.css">
+    </head>
+
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- <script src="stars.js"></script> -->
+        <script src="main.js"></script>
+        <script src="validation.js"></script>
+
+        <canvas id="star-scape"></canvas>
+
+        <div class="sun sun-top"><div><span>TechCon2023</span></div></div>
+        <div class="text-box">
+            <h2>Register</h2>
+            <p>
+                Register for attendance to TechCon.
+            </p>
+            <input id="name" placeholder="Name" onchange="displayValidationMessage()"/> <br>
+            <input id="email" placeholder="Email" onchange="displayValidationMessage()"/> <br>
+            <input id="phone-number" placeholder="Phone Number" onchange="displayValidationMessage()"> <br>
+            <span id="submit-button" class="unsubmit-button">Submit</span>
+            <br>
+            <span id="result">No name entered. No email entered. No phone number entered.</span>
+            <span class="back-button" onclick="window.location = 'reverse_register.html'">Back</span>
+        </div>
+    </body>
+</html>

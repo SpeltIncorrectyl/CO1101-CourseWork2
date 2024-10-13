@@ -1,0 +1,49 @@
+/* The sun is composed of three elements:    
+    * A flexbox div stretching the entire screen (most of the time)
+    * A circular div with drop shadow
+    * A span containing text
+*/
+
+/* This is the parent of the sun, a screen spanning flexbox */
+.sun {
+    width: 100vw; /* Make it span the entire screen */
+    height: 100vh;
+
+    display: flex; /* Make it centre its children within itself */
+    justify-content: center; /* Because it spans the entire screen then its centre is the screen's centre */
+    align-items: center; 
+
+    position: absolute; /* Stop other elements from intefering with the position */
+
+    transition: 0.3s; /* Makes it animate when the css properties change */
+}
+
+.sun div {
+    width: min(50vw, 500px); /* Set the size */
+    height: min(50vw, 500px);
+
+    background-color: #ffed2b; /* Give it the sun colour */
+
+    border-radius: 50%; /* Make it a circle */
+
+    display: flex; /* Move the text inside to be in the centre of the sun */
+    justify-content: center;
+    align-items: center; 
+
+    transition: 0.3s; /* Makes it animate when the css properties change */
+
+    box-shadow: 0px 0px 100px 10px #fabf37; /* This is where the magic happens - colouring a drop shadow orange gives the div an orange glow */
+}
+
+.sun div span {
+    text-align: center; /* Make the text centred */
+    font-family: "queensides"; /* Use the font */
+    transition: 0.3s; /* Makes it animate when the css properties change */
+    font-size: 40pt; /* Make the font the correct sized */
+}
+
+@media screen and (max-width: 600px) {
+    .sun div span {
+      font-size: 10pt;
+    }
+}

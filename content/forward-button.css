@@ -1,0 +1,16 @@
+/* back button but repurposed to go in the other direction */
+
+.text-box .forward-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-style: "bold";
+    font-size: 25pt;
+    padding: 5px;
+    background-color: #131314;
+    transition: 0.3s;
+}
+
+.forward-button:hover {
+    bottom: 25px;
+}
